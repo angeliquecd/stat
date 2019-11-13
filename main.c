@@ -10,6 +10,9 @@ int main(){
     printf("You failed.\n");
     return 0;
   }
+  printf("Printing the size of the file: %ld bytes\n",buffer->st_size);
+  printf("Printing the permissions of the file: %d\n",buffer->st_mode);
+  printf("Printing the time of last acces:%d",buffer->st_atime);
   printf("%0d\n",buffer->st_mode);
   return 0;
 }
